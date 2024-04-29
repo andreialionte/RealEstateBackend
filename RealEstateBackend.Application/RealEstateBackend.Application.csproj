@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Auth\Commands\LoginCommand\" />
+    <Folder Include="Features\Auth\Commands\RegisterCommand\" />
+    <Folder Include="Features\Image\Commands\CreateImage\" />
+    <Folder Include="Features\Image\Commands\DeleteImage\" />
+    <Folder Include="Features\Image\Commands\UpdateImage\" />
+    <Folder Include="Features\Image\Queries\GetImages\" />
+    <Folder Include="Features\Image\Queries\GetImage\" />
+    <Folder Include="Features\Review\Commands\CreateReview\" />
+    <Folder Include="Features\Review\Commands\DeleteReview\" />
+    <Folder Include="Features\Review\Commands\UpdateReview\" />
+    <Folder Include="Features\Review\Queries\GetReviews\" />
+    <Folder Include="Features\Review\Queries\GetReview\" />
+    <Folder Include="Features\User\Commands\CreateUser\" />
+    <Folder Include="Features\User\Commands\DeleteUser\" />
+    <Folder Include="Features\User\Commands\UpdateUser\" />
+    <Folder Include="Features\User\Queries\GetUsers\" />
+    <Folder Include="Features\User\Queries\GetUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateBackend.Domain\RealEstateBackend.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
